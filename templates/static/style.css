@@ -7,11 +7,32 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.5s ease;
+}
+
+/* Weather themes */
+body.sunny {
+    background: linear-gradient(to right, #fceabb, #f8b500); /* Warm sunny colors */
+}
+
+body.rainy {
+    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Blue rainy theme */
+}
+
+body.cloudy {
+    background: linear-gradient(to right, #d7d2cc, #304352); /* Light blue for cloudy */
+}
+
+body.snow {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Cold snow theme */
+}
+
+body.default {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Default sky blue */
 }
 
 .container {
@@ -22,6 +43,7 @@ body {
     max-width: 400px;
     width: 100%;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 h1 {
